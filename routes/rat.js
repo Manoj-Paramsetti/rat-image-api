@@ -46,7 +46,7 @@ images=[
     'https://images.unsplash.com/photo-1583407752418-8ac942a1c34b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80'
 ];
 
-router.route('/get').get((req, res) => {
+router.route('/get').get((req, res) => {    
     index = Math.floor(Math.random() * images.length);
 
     image = images[index];

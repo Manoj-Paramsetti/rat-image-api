@@ -12,8 +12,6 @@ var corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-const uri = process.env.ATLAS_URI;
-
 const answerRouter = require('./routes/rat');
 
 app.use('/rat', answerRouter);
